@@ -1,0 +1,44 @@
+@import '../src//theme/_colors.scss';
+
+.App {
+  background-color: $appBackground;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+}
+
+/* Left takes 2.5/3.5 */
+.left-panel {
+  flex: 2.5;
+  background-color: transparent;
+  margin-bottom: 0px;
+  min-height: 0;
+}
+
+/* Right takes 1/3.5 */
+.right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  min-height: 0;
+
+  .right-section-top {
+    flex: 1;
+    margin: 10px 0;
+  }
+
+  .right-section-middle {
+    flex: 1;
+    margin: 10px 0;
+  }
+
+  .right-section-bottom {
+    flex: 3;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+}

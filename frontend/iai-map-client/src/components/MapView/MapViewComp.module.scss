@@ -1,0 +1,24 @@
+@import '../../theme/colors.scss';
+
+.map-box {
+    display: flex;
+    background-color: $panelsBackground;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: $lightBorder;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+
+    .map-state-header{
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-size: 32px;
+        align-self: center;
+        color: $fontColor;
+    }
+}

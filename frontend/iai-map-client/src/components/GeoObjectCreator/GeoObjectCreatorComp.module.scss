@@ -1,0 +1,48 @@
+@import '../../theme/colors.scss';
+
+.creator-box {
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-color: $panelsBackground;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: $lightBorder;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    .creator-title{
+        align-self: flex-start;
+        color: $fontColor;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .gridContainer {
+        display: flex;
+        justify-content: center; // horizontal centering
+        align-items: center;     // vertical centering
+        height: 100%;            // fill parent height
+        width: 100%;             // optional: fill parent width
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .buttonGrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 10px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .buttonGrid button {
+            width: 80%;
+        }
+}

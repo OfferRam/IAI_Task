@@ -1,0 +1,6 @@
+@IAIGisWebService_HostAddress = http://localhost:5069
+
+GET {{IAIGisWebService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

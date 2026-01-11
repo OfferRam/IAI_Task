@@ -1,0 +1,51 @@
+@import '../../theme/colors.scss';
+
+.table-box {
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-color: $panelsBackground;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 1px;
+    border-color: $lightBorder;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 0rem;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+    .table-title{
+        align-self: flex-start;
+        color: $fontColor;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-Container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+
+        .table-Container {
+            align-self: flex-start; 
+            width: 100%;
+            max-width: 90%;
+            min-height: 200px;
+            max-height: 260px;
+            background-color: $DataTableBackground;
+            overflow-y: auto;
+            overflow-x: hidden;
+            // optional: make the table take full width inside
+            .MuiTable-root {
+                width: 100%;
+            }
+        }
+    }
+
+}
